@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.4" type="template" client="site">
+	<name>PersonallTemplate 4 Extranet</name>
+	<creationDate>17 July 2015</creationDate>
+	<author>Pedro "Ratto" Paixão</author>
+	<authorEmail>pedro.ratto@inetep.org.br</authorEmail>
+	<authorUrl>http://www.inetep.org.br</authorUrl>
+	<copyright>INETEP 2015</copyright>
+	<license>GNU Generic Public License version 2 or later; check out LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>PersonallGroup custom template for extranet content</description>
+	<files>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+     	<folder>img</folder>
+		<filename>index.php</filename>
+	</files>
+	<positions>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>tabs</position>
+        <position>search</position>
+		<position>hello</position>
+		<position>menu</position>
+        <position>search</position>
+		<position>alerts</position>
+		<position>personalls</position>
+        <position>footer</position>
+	</positions>
+	<config>
+	</config>
+</extension>

@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------------------------------*/
+/*CSS feito por Hannah Tornatore------------------------------------------------------*/
+/*Take your drugs before scavaging my code, 'cause this is gonna be a real trip!------*/
+/*(Thanks to the magical Gnomes who leaded me to the answers)-------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+/*Background-Gradiente+Textura--------------------------------------------------------*/
+/*Sim! É um background Híbrido, e sim, isso é insano!---------------------------------*/
+
+body{
+		background: url(../img/Fundo_Metal.png),#9ba1a7; /* Old browsers */
+		background: url(../img/Fundo_Metal.png),-moz-linear-gradient(left,  #9ba1a7 0%, #e2e7e9 48%, #9ba1a7 100%); /* FF3.6+ */
+		background: url(../img/Fundo_Metal.png),-webkit-gradient(linear, left top, right top, color-stop(0%,#9ba1a7), color-stop(48%,#e2e7e9), color-stop(100%,#9ba1a7)); /* Chrome,Safari4+ */
+		background: url(../img/Fundo_Metal.png),-webkit-linear-gradient(left,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* Chrome10+,Safari5.1+ */
+		background: url(../img/Fundo_Metal.png),-o-linear-gradient(left,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* Opera 11.10+ */
+		background: url(../img/Fundo_Metal.png),-ms-linear-gradient(left,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* IE10+ */
+		background: url(../img/Fundo_Metal.png),linear-gradient(to right,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ba1a7', endColorstr='#9ba1a7',GradientType=1 ); /* IE6-9 */
+		}
+
+/*Css da Barra do Topo----------------------------------------------------------------*/
+/*Eu sei que é só um topo, mas vamos deixar ele かわい shall we?-----------------------*/
+
+.position-search, .position-login  {
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, #FFF 0%, #DBDBDB 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFF), color-stop(100%,#DBDBDB)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #FFF 0%, #DBDBDB 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #FFF 0%, #DBDBDB 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFF 0%, #DBDBDB 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #FFF 0%, #DBDBDB 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */  
+	background: transparent linear-gradient(to bottom, #FFF 0%, #DBDBDB 100%) repeat scroll 0% 0%;
+  
+	border-bottom: 2px solid rgba(0, 0, 0, 0.36);
+	z-index: 3;
+  	height:70px;
+}
+
+.position-login{
+  padding-top:20px;
+  text-align:right;
+}
+
+@media screen and (max-width: 990px) {
+  .position-search {
+    background:#FFF;
+	border:none;
+  	height:50px;}
+}
+
+@media screen and (max-width: 990px) {
+  .position-login {
+    height:60px;}
+}
+
+/*Fundo-Menu-Lateral----------------------------------------------------------------*/
+/*Do you like magic...?-------------------------------------------------------------*/
+
+@media screen and (max-width: 990px) {
+  .menu_profile {
+    padding: 10px 0px 40px 25px;
+    /*background-color: rgba(82, 155, 227, 0.34);*/
+	}
+}
+
+@media screen and (min-width: 991px) {
+  #cModule-HelloMe{
+    /*background-color: rgba(82, 155, 227, 0.34);*/
+    padding: 10px 6px;
+    /*border-right: 2px solid #A5CCD8;
+    border-bottom: 1px solid #A5CCD8;
+    border-bottom-right-radius: 20px;*/
+	}
+  .menu_profile{
+    padding-left:0px;
+    padding-right:0px;
+  }
+}
+
+/*Elementos do Menu Lateral---------------------------------------------------------*/
+/*Um pouco menos tenso que seu primo alaranjado da outra página...------------------*/
+
+.joms-hellome__menu li{
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.joms-hellome__menu li:hover{
+  background-color: rgba(245,247,247,0.2);
+  border-radius: 10px;
+}
+
+.menu_profile a{
+    text-decoration: none;
+  	color: #363636;
+}
+
+.menu_profile svg{
+    fill:#424242;
+}
+
+/*Fix de opacidade do fundo do conteúdo-------------------------------------------------*/
+.joms-page{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*Lista-Personalls----------------------------------------------------------------------*/
+/*Call me Mr.Temporary------------------------------------------------------------------*/
+
+.list_personall{
+  padding-left:0px;
+}
+
+/*Footer-Decoração-------------------------------------------------------------------*/
+/*Algo biito lá pra baixo...---------------------------------------------------------*/
+
+.footer-info{
+	border-top: 2px solid rgba(255,255,255,0.7);
+  	padding-top: 10px;
+  	padding-left: 20px;
+  	height: 92px;
+}
+
+.footer-lang{
+	border-top: 2px solid rgba(255,255,255,0.7);
+ 	padding-top: 10px;
+  	height: 80px;
+  	text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+  .footer-lang {
+	border:none;
+ 	text-align: left;
+  	height: 65px;}
+}
+
+.footer-info h4, .footer-lang h4 {
+  font-size:13px;
+}
+
+.footer-info h5{
+  font-size:10px;
+}
+
+/*Seta para o Topo-Posicionamento----------------------------------------------------*/
+/*Também conhecido como o elemento Rebelde-------------------------------------------*/
+
+.footer-topo{
+  position:fixed;
+  z-index:5;
+  right:40px;
+  bottom: 10px;
+}
+
+/*Tabs para outras páginas------------------------------------------------------------*/
+/*Apenas os que pagarem poderão ver a glória das 3 juntas! Vamos, pague, pague!!------*/
+
+.Consumidor_btn, .Profissional_btn, .Empresa_btn{
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  color: #E9EEFC;
+  font-size: 17px;
+  padding: 4px 9px 4px 9px;
+  background: #4A96E0;
+  border-top: solid rgba(255, 255, 255, .4) 2px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  margin-right:10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.Profissional_btn{
+  color: #CEEFD3;
+  background: #5EA561;
+}
+
+.Empresa_btn{
+  color: #FFD2D2;
+  background: #D75757;
+}
+
+.Consumidor_btn:hover, .Profissional_btn:hover, .Empresa_btn:hover {
+  background: #70BDFE;
+  text-decoration: none;
+  color: #E9EEFC;
+  border-bottom: none;
+  box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.5);
+  border-top: solid rgba(0, 0, 0, .2) 2px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Profissional_btn:hover{
+  color: #CEEFD3;
+  background: #63DA68;
+}
+
+.Empresa_btn:hover {
+  color: #FFD2D2;
+  background: #F05F5F;
+}
+
+.Consumidor_btn:focus, .Consumidor_btn:active, .Profissional_btn:focus, .Empresa_btn:focus {
+  text-decoration: none;
+  text-shadow: 1px 1px 5px #FFF;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 400px) {
+  .Consumidor_btn, .Profissional_btn, .Empresa_btn{
+      font-size: 13px;
+   	  margin-right:7px;
+  		}
+}
+
+/*Fix para a barra de rolagem horizontal do Layout Fluido-----------------------------*/
+/*Can't touch this! tu tuu tuu tuu tututu---------------------------------------------*/
+
+.container-fluid{
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*Edições do visual e layout do Feed/conteúdo----------------------------------------*/
+/*Some for the fix, some for the sight, and some for those who believe this is right-*/
+
+.jomsocial-wrapper .jomsocial{
+  padding:0px;
+}
+
+.joms-stream__header{
+	background-color: #BFE4FF;
+	border-radius: 20px 20px 0px 0px;
+	margin-bottom: 10px;
+}
+
+.joms-stream, .joms-stream--notifications{
+	border-radius: 20px;
+	border: 1px solid #FFF;
+}
+
+.joms-comment__reply, .joms-tab__content{
+  	border-radius: 0px 0px 20px 20px;
+}
+
+.joms-focus__cover-image, .joms-focus__cover-image--mobile, .joms-focus{
+  	border-radius: 20px 20px 0px 0px;
+}
+
+.joms-focus__cover-image, .joms-focus__cover-image--mobile{
+	border: 2px solid #FFF;
+}
+
+.joms-tab__bar{
+	background-color: #E1E1E1;
+}

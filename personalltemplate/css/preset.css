@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------------------------------*/
+/*CSS feito por Hannah Tornatore------------------------------------------------------*/
+/*Take your drugs before scavaging my code, 'cause this is gonna be a real trip!------*/
+/*(Thanks to the magical Gnomes who leaded me to the answers)-------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+/*Background-Gradiente+Textura--------------------------------------------------------*/
+/*Sim! É um background Híbrido, e sim, isso é insano!---------------------------------*/
+
+body /*.container*/ {
+		background: url(../img/Fundo_Metal.png),#9ba1a7; /* Old browsers */
+		background: url(../img/Fundo_Metal.png),-moz-linear-gradient(left,  #9ba1a7 0%, #e2e7e9 48%, #9ba1a7 100%); /* FF3.6+ */
+		background: url(../img/Fundo_Metal.png),-webkit-gradient(linear, left top, right top, color-stop(0%,#9ba1a7), color-stop(48%,#e2e7e9), color-stop(100%,#9ba1a7)); /* Chrome,Safari4+ */
+		background: url(../img/Fundo_Metal.png),-webkit-linear-gradient(left,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* Chrome10+,Safari5.1+ */
+		background: url(../img/Fundo_Metal.png),-o-linear-gradient(left,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* Opera 11.10+ */
+		background: url(../img/Fundo_Metal.png),-ms-linear-gradient(left,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* IE10+ */
+		background: url(../img/Fundo_Metal.png),linear-gradient(to right,  #9ba1a7 0%,#e2e7e9 48%,#9ba1a7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ba1a7', endColorstr='#9ba1a7',GradientType=1 ); /* IE6-9 */
+		}
+
+/*Background por Tráz do Template--------------------------------------------------*/
+
+/*body {
+        background: rgb(255,255,255); /* Old browsers */
+/*        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+/*        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+/*        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+/*        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+/*        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+/*        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+/*        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  
+/*  		font-family:Arial, Helvetica, sans-serif;
+  
+  		  background-size:100% 150%;
+}
+
+/*Sombra e Contorno do Template--------------------------------------------------------*/
+
+/*.container {
+
+    border-radius: 2px;
+    border-right: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+	box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*Fix Horizontal dos Formulários------------------------------------------------------*/
+/*Ps. Um MUST-HAVE para parar o conflito entre Joomla! e Bootstrap--------------------*/
+
+.control-group {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Workaround do Login Básico do Joomla!(Se editar, explode!)--------------------------*/
+/*PS. Se tem algo muito zoado acontecendo nos forms, o culpado está abaixo.-----------*/
+
+.unstyled li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+ 	display: inline; 
+	font-size: 10px;
+  	padding-right:10px;
+}
+
+.unstyled li a {
+  color:#333;
+}
+
+.element-invisible {
+  display:none;
+}
+
+.btn-primary{
+  background-color:#bdbdbd;
+  border-color:#bdbdbd;
+  color:#4c4c4c;
+  font-size:10px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  background-color:#D5D5D5;
+  border-color:#D5D5D5;
+  color:#4c4c4c;
+}
+
+/*CSS da área da busca!------------------------------------------------------*/
+/*Para manter o fundo diferente e o tamanho da área correto------------------*/
+
+.position-search{
+  background-color:#fff;
+  z-index:40;
+  height:75px;
+}
+
+#mod-search-searchword{
+  margin:22.5px;
+}
+
+@media screen and (max-width: 550px) {
+  #mod-search-searchword{
+  width:50%;}
+}
+
+
+/*Background Circular do Login!/Busca---------------------------------------*/
+/*Código baddass do css na responsividade logo abaixo-----------------------*/
+
+.position-login{
+  	background: rgba(0, 0, 0, .08); 
+  	background-image: url("../img/Login_Borda.png");
+	background-repeat:no-repeat;
+ 	background-size:93px;
+ 	height:75px;
+}
+
+@media screen and (max-width: 990px) {
+  .position-login {
+    background-image:none;}
+}
+
+/*Menu Lateral - Meus Botões!-----------------------------------------------*/
+/*Behold all my Css'ness!!--------------------------------------------------*/
+
+.btn_Hannah {
+	display: block;
+	font-size: 24px;
+	color:#4a3f27;
+	opacity: 0.5;
+	filter: alpha(opacity=50); 
+	text-shadow: 1px 2px 2px rgba(150, 150, 150, 1);
+	white-space: nowrap;
+}
+		
+.btn_Hannah h3 {
+	font-size:14px;
+	text-shadow:none;
+	padding-bottom:10px;
+	margin:5px;
+}
+
+a.btn_Hannah {
+	text-decoration:none;
+}
+
+a.btn_Hannah:hover {
+	-webkit-transition: all .50s ease-in-out;
+	-o-transition: all .30s ease-in-out;
+	-moz-transition: all .30s ease-in-out;
+	transition: all .30s ease-in-out;
+	color:#ffffff;
+}
+@media screen and (max-height: 680px) {
+	.btn_Hannah h3 {
+    	font-size:2vh;
+		padding-bottom: 0px;}
+	.btn_Hannah {
+		font-size:3.5vh;}
+}
+@media screen and (max-height: 530px) {
+	.btn_Hannah h3 {
+    	font-size:10px;}
+	.btn_Hannah {
+		font-size:13px;}
+}
+
+/*Box do Marketing com Responsividade---------------------------------------*/
+/*Why photoshoping when you can "cssing"?-----------------------------------*/
+
+.Inicio_Box {
+	text-align:center;
+	background-color: #FFF;
+	padding:2px;
+	border-radius:20px;
+    margin-left: auto;
+ 	margin-right: auto;
+    margin-top: 10%;
+   	opacity: 0.3;
+}
+
+.Inicio_Box h1 {
+	font-size:24px;  
+	padding:15px;
+}
+
+@media screen and (max-width: 990px) {
+    .Inicio_Box{
+     	margin-bottom:50px;}
+}
+
+@media screen and (max-width: 550px) {
+    .Inicio_Box h1 {
+        font-size:5vmin;  
+        padding:5px;}
+}
+
+
+
+/*Fundo - Marketing---------------------------------------------------------*/
+
+.SB_Fundo{
+	background-image:url(../img/Dots_Background.png);
+   	background-position:left;
+	background-size:50%;
+	background-repeat:no-repeat;
+    height:400px;
+  	width:500px;
+   	margin-left:-15px;
+    position: absolute;
+   	top: 80px;
+}
+
+@media screen and (max-width: 990px) {
+	.SB_Fundo{
+   		background-image:none;}
+}
+
+
+/*Barra de Busca - かわいくない、 けど。。。 ひっすでした。----------------------------*/
+/*ほんとだ、この デザインは みにくいと 思います。。。------------------------------------*/
+
+.inputbox.search-query{
+  		border-right:1px solid #BBB;
+		border-bottom:1px solid #BBB;
+		border-left:none;
+		border-top:none;
+		background-color: #fcfcfc;
+}
+
+.inputbox.search-query:focus, #check:focus{
+  		border-right:1px solid #f6a878;
+		border-bottom:1px solid #f6a878;
+}
+
+/*Imagens da sanfona do Saiba Mais------------------------------------*/
+.SB_img{
+  width:200px;
+  height:133px;
+  margin:10px;
+  border:2px solid #BBB;  
+}
+
+@media screen and (max-width: 555px) {
+  .SB_img{
+    display:none;}
+}
+
+
+/*Fix no espaçamento do Banner-----------------------------------------*/
+.position-banner{
+  padding:0px;
+}
+
+/*Botões de retorno para a primeira página + Responsividade-------------------------------*/
+/*Tentando manter a legibilidade desde 2015-----------------------------------------------*/
+.Start_btn {
+  -webkit-border-radius: 17;
+  -moz-border-radius: 17;
+  border-radius: 17px;
+  text-shadow: 1px 1px 3px #5ba935;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  background: #7fd953;
+  border: solid rgba(255, 255, 255, .8) 2px;
+  text-decoration: none;
+  position:absolute;
+  z-index:5;
+  right:3%;
+  bottom:10%;
+}
+
+.Start_btn:hover, .Start_btn:focus {
+  background: #8fff58;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 990px) {
+  .Start_btn {
+      font-size: 11px;
+  	  padding: 7px;
+  	  bottom:7%;}
+}
+
+@media screen and (max-width: 550px) {
+  .Start_btn {
+      font-size: 9px;
+  	  padding: 2px;
+  	  bottom:5%;}
+}
+
+/*Box do Sobre Nós com Responsividade---------------------------------------*/
+/*Yeah... Eu copiei do Box do Marketing-------------------------------------*/
+
+.Sobre_Box {
+	width:100%;
+	max-width:850px;
+	text-align:justify;
+	background-color:rgba(255, 255, 255, .3);
+	padding:10px 20px 20px 20px;
+	border-radius:20px;
+    margin-left: auto;
+	margin-right: auto;
+    margin-top: 5%;
+    margin-bottom:20px;
+	color: #555;
+}
+
+.Sobre_Box h5 {
+	font-size:inherit; 
+   	padding-top:20px;
+}
+
+.Sobre_Box h1 {
+	font-size:27px; 
+   	padding-bottom:15px;
+}
+
+@media screen and (max-width: 990px) {
+    .Sobre_Box{
+   	margin-bottom:50px;}
+}
+
+@media screen and (max-width: 550px) {
+    .Sobre_Box h1 {
+       font-size:5vmin;  
+       padding:5px;}
+}
+
+/*Vídeo do Sobre Nós-------------------------------------------------*/
+.Sobre_Video{
+  margin-left:15px;
+  margin-top:5px;
+}
+
+@media screen and (max-width: 535px) {
+  .Sobre_Video{
+    display:none;}
+}
+
+/*Registro do JomSocial-------------------------------------------------*/
+
+.kk-register{
+	margin: 0px 20px 0px 35px;
+}
+	
+@media screen and (max-width: 990px) {
+	.kk-register{
+	margin: 20px;}
+}
+
+@media screen and (max-width: 550px) {
+	.kk-register{
+	margin: 0px;}
+}
+
+.kk-regtitle{
+	margin-top: 10px;
+}
+
+/*.jomsocial-wrapper .jomsocial{
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+
+/*Login do JomSocial---------------------------------------------------*/
+/*This is gonna be a real workaround... I need a drink-----------------*/
+
+
+#form-login-username, #form-login-password, #form-login-remember, input[value="LOGIN"]{
+  	margin-left: 10px;
+ 	font-size:11px; 
+ 	float:left;
+  }
+
+#form-login-username{
+  	margin-left: 54px;
+}
+
+#form-login-password{
+	width: 100px;
+}
+
+#form-login-remember, input[value="LOGIN"]{
+  	margin-top: 15px;
+}
+
+input[value="LOGIN"]{
+  	padding: 5px 9px;
+	font-size: 10px;
+}
+
+#username, #passwd {
+  	min-height: 25px;
+ 	margin-top: 15px;
+}
+
+.top-gap{
+ 	margin-top: -20px !important;
+	float: left;
+	margin-left: 15px;
+  	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 990px) {
+  .top-gap{
+   	 margin-left: 40px;}
+  
+  #form-login-username{
+   	 margin-left: 80px;} 
+}
+
+/*Resize Mínimo do Login do JomSocial---------------------------------*/
+
+@media screen and (max-width: 529px) {
+  .position-login{
+    height: 100%;
+  }
+  #form-login-username, #form-login-password{
+  	clear: left;
+    text-align:center;
+    width:100%;
+    margin-left: 15px;
+    margin-bottom: 0px;
+  } 
+  #passwd{
+    margin-top: 0px;}
+  input[value="LOGIN"]{
+    margin-top:0px;
+ 	float:none;
+    margin-left: 25px;
+  }
+  #form-login-remember{
+    margin-top:0px;
+    margin-left:20px;
+    float:none;
+    margin-bottom: 5px;
+  }
+  .top-gap{
+    float:none;
+    margin-left: 0px;
+    margin-top: -5px !important;
+    margin-right: 5px;
+    padding-bottom: 10px;
+  }
+}

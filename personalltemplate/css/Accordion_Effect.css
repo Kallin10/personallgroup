@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ac-container{
+	width: 80%;
+  	max-width: 950px;
+	margin: 10px auto 30px auto;
+}
+
+.ac-containerwide{
+  width:100%
+}
+
+.ac-container label{
+	
+	padding: 5px 20px 35px;
+	position: relative;
+	/*z-index: 10;*/
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: #777;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	line-height: 33px;
+	font-size: 19px;
+	border-radius:20px;
+	margin-bottom:4px;
+	margin-top:3px;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+.ac-container label:hover{
+	background: #fff;
+}
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	color: #3d7489;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+
+.ac-container input:checked + #actag-1,
+.ac-container input:checked + #actag-1:hover
+ {
+	background: #8bcaff;
+}
+
+.ac-container input:checked + #actag-2,
+.ac-container input:checked + #actag-2:hover
+ {
+	background: #64e764;
+	color:#348941;
+}
+
+.ac-container input:checked + #actag-3,
+.ac-container input:checked + #actag-3:hover
+ {
+	background: #ef6969;
+	color: #922F2F;
+}
+
+.ac-container input:checked + #actag-4,
+.ac-container input:checked + #actag-4:hover
+ {
+	background: #FFA200;
+	color: #834F17;
+}
+
+#actag-4{
+  font-size: 15px;
+  height: 100%;
+  padding: 10px 40px 10px 20px;
+  line-height: 22px;
+}
+
+.ac-container label:after,
+.ac-container input:checked + label:after{
+	content: "\f111";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 4px;
+	font-family: FontAwesome;
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+	content: "\f13a";
+	font-family: FontAwesome;
+}
+
+.ac-container input:checked + label:hover:after{
+	 font-family: FontAwesome;
+     content: "\f139";
+}
+
+.ac-container input{
+	display: none;
+}
+
+.ac-container article{
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: 
+		height 0.3s ease-in-out, 
+		box-shadow 0.6s linear;
+	border-radius:5px;
+	width: 90%;
+	left:5%;
+}
+.ac-container input:checked ~ article{
+	transition: 
+		height 0.5s ease-in-out, 
+		box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+.ac-container article p{
+	color: #777;
+	line-height: 23px;
+	font-size: 14px;
+	padding: 5px 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.ac-container input:checked ~ article.ac-xxsmall{
+	height: 70px;
+}
+.ac-container input:checked ~ article.ac-xsmall{
+	height: 100px;
+}
+.ac-container input:checked ~ article.ac-small{
+	height: 150px;
+}
+.ac-container input:checked ~ article.ac-medium{
+	height: 200px;
+}
+.ac-container input:checked ~ article.ac-large{
+	height: 230px;
+}
+.ac-container input:checked ~ article.ac-xlarge{
+	height: 270px;
+}
+.ac-container input:checked ~ article.ac-xxlarge{
+	height: 300px;
+}
+.ac-container input:checked ~ article.ac-principios-large{
+	height: 1480px;
+}
+@media screen and (max-width: 990px) {
+  .ac-container input:checked ~ article{
+    overflow-y: scroll;}
+}
