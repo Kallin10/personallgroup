@@ -55,5 +55,7 @@ input[type="button"]:hover{
         possível cadastrar a sua empresa, contate-nos.<br/>
         Analisaremos o caso e resolveremos da melhor forma possível.
     </h4>
-    <a href="javascript:history.go(-2)">Voltar</a>
+    <a href="javascript:history.go(-2)" style="text-decoration: none;">
+    	<input type="button" value="Voltar" />
+    </a>
 </div>

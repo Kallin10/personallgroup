@@ -31,7 +31,7 @@ $session = JFactory::getSession();
 ?>
 
 <div id="teste" style="margin: 0px auto; max-width: 700px;">
-	<h4 style="background-color: rgba(67, 201, 67, 0.3); padding: 13px; border-radius: 20px; color: #fbfff9; max-width: 700px; margin: 15px;"> 
+	<h4 style="background-color: rgba(67, 201, 67, 0.3);  padding: 13px 13px 30px 13px; border-radius: 20px; color: #fbfff9; max-width: 700px; margin: 15px;"> 
 		<br /> Pedido para cadastro para a empresa <?php echo $this->nome; ?> feita por
                 <?php echo $this->id; ?>.
 	</h4>

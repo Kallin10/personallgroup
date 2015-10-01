@@ -29,20 +29,28 @@ $session = JFactory::getSession();
 ?>
 
 <style type="text/css">
+
+#txtCnpj, #txtSetor, #txtProduto{
+	margin-bottom:10px;
+	width:100%;
+	max-width: 400px;}
+
+.prof_extraopt2 {
+	margin-left:20px;}
 	
-input[type="button"]{
+input[type="submit"]{
 	background: #5ea561 none repeat scroll 0% 0%; 
 	color: #ffffff; 
 	border-radius: 3px; 
 	border: 1px solid #5d742b; 
 	padding: 5px 14px; 
-	margin: 10px 20px;}
+	margin-top: 15px;}
 	
-input[type="button"]:hover{
+input[type="submit"]:hover{
 	background: #63DA68;
     text-decoration: none;
 	border: 1px solid #66B93B;}
-	
+
 </style>
 
 <div style="margin: 0px auto; max-width: 700px;">
@@ -53,11 +61,11 @@ input[type="button"]:hover{
          seu negócio.
     </h4>
     <form class="prof_extraopt2" method="post" action="index.php?option=com_personallgroup&task=registraEmpresario">
-    	<label for="txtCnpj" class="description">CNPJ: </label>
+    	<label for="txtCnpj" class="description">CNPJ: </label><br />
 		<input name="txtCnpj" type="text" value="" id="txtCnpj"/><br />
-        <label for="txtSetor" class="description">Setor: </label>
+        <label for="txtSetor" class="description">Setor: </label><br />
 		<input name="txtSetor" type="text" value="" id="txtSetor"/><br />
-        <label for="txtProduto" class="description">Produto/Serviço: </label>
+        <label for="txtProduto" class="description">Produto/Serviço: </label><br />
 		<input name="txtProduto" type="text" value="" id="txtProduto"/><br />
     	
         <input type="submit" value="Próximo" />

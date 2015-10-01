@@ -31,7 +31,7 @@ $empresa = $session->get('empresa');
 
 <style type="text/css">
 
-#txtCargo, #txtNomeSuperior{
+#txtCargo, #txtNomeSuperior, #txtEmailSuperior{
 	margin-bottom:10px;
 	width:100%;
 	max-width: 400px;}

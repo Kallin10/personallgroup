@@ -73,7 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ba1a7', end
 }
 
 .element-invisible {
-  display:none;
+  	display:none;
 }
 
 .btn-primary{
@@ -169,7 +169,7 @@ a.btn_Hannah:hover {
 		font-size:13px;}
 }
 
-/*Box do Marketing com Responsividade---------------------------------------*/
+/*Box do Marketing com Responsividade e Mensagem de Avisos------------------*/
 /*Why photoshoping when you can "cssing"?-----------------------------------*/
 
 .Inicio_Box {
@@ -183,6 +183,20 @@ a.btn_Hannah:hover {
    	opacity: 0.3;
 }
 
+.Warning_Message{
+	padding:0.5px;
+	border-radius:0px;
+   	opacity: 1;
+    margin-top: 5px;
+  	margin-bottom:15px;
+  	background: rgba(242, 136, 74, 0.24) none repeat scroll 0% 0%;
+  	color: #686868;
+}
+
+.position-warning{
+  padding-left: 0px;
+  padding-right: 0px;}
+
 .Inicio_Box h1 {
 	font-size:24px;  
 	padding:15px;
@@ -191,6 +205,8 @@ a.btn_Hannah:hover {
 @media screen and (max-width: 990px) {
     .Inicio_Box{
      	margin-bottom:50px;}
+ 	.Warning_Message{
+  		margin-bottom:0px;}
 }
 
 @media screen and (max-width: 550px) {
@@ -198,7 +214,6 @@ a.btn_Hannah:hover {
         font-size:5vmin;  
         padding:5px;}
 }
-
 
 
 /*Fundo - Marketing---------------------------------------------------------*/
@@ -345,6 +360,7 @@ a.btn_Hannah:hover {
 }
 
 /*Registro do JomSocial-------------------------------------------------*/
+/*God's be prayed that i could do that!---------------------------------*/
 
 .kk-register{
 	margin: 0px 20px 0px 35px;
@@ -364,9 +380,9 @@ a.btn_Hannah:hover {
 	margin-top: 10px;
 }
 
-/*.jomsocial-wrapper .jomsocial{
-  max-width: 700px;
-  margin: 0px auto;
+.outerpgbar + .joms-page{
+	max-width: 600px;
+	margin: auto;
 }
 
 
@@ -418,6 +434,7 @@ input[value="LOGIN"]{
 }
 
 /*Resize Mínimo do Login do JomSocial---------------------------------*/
+/*For Gods Sake, why 'ya can't stay in place?! (╯°□°）╯︵ ┻━┻------*/
 
 @media screen and (max-width: 529px) {
   .position-login{
@@ -450,4 +467,12 @@ input[value="LOGIN"]{
     margin-right: 5px;
     padding-bottom: 10px;
   }
+}
+
+/*Resize do Banner da primeira página---------------------------------*/
+/*ほんとに！？　だれが下のページを見られない！？めがねを買え!-----------------------*/
+
+img[src="/personallgroup/images/images/commons/Personall_Logo.png"]{
+	width: 85%;
+	margin: 0px 7.5%;
 }
