@@ -24,6 +24,32 @@ $user = Jfactory::getUser();
 
 ?>
 
+<style type="text/css">
+
+#txtEmpresa, #txtEmailProf, select[name="cBoxTipoEmp"]{
+	margin-bottom:10px;
+	padding: 2px;
+	width:100%;
+	max-width: 400px;}
+
+.prof_extraopt2 {
+	margin-left:20px;}
+	
+input[type="submit"]{
+	background: #5ea561 none repeat scroll 0% 0%; 
+	color: #ffffff; 
+	border-radius: 3px; 
+	border: 1px solid #5d742b; 
+	padding: 5px 14px; 
+	margin-top: 15px;}
+	
+input[type="submit"]:hover{
+	background: #63DA68;
+    text-decoration: none;
+	border: 1px solid #66B93B;}
+
+</style>
+
 <div style="margin: 0px auto; max-width: 700px;">
     <h4 style="background-color: rgba(67, 201, 67, 0.3); padding: 13px; border-radius: 20px; color: #fbfff9; max-width: 700px; margin: 15px;">Ol&aacute; <?php echo $user->name; ?>, 
             <br /> Este &eacute; seu perfil profissional. 
@@ -31,10 +57,11 @@ $user = Jfactory::getUser();
             <br /> N&atilde;o se preocupe, &eacute; tudo gr&aacute;tis para voc&ecirc;.
     </h4>
     <form class="prof_extraopt2" method="post" action="index.php?option=com_personallgroup&task=iniciaRegistro">
-    	<label for="txtEmpresa" class="description">Empresa: </label>
-		<input name="txtEmpresa" type="text" value="" id="txtEmpresa"/><br />
-        <label for="txtEmailProf" class="description">Seu e-mail profissional: </label>
-		<input name="txtEmailProf" type="text" value="" id="txtEmailProf"/><br />
+    	<label for="txtEmpresa" class="description">Empresa: </label><br/>
+		<input name="txtEmpresa" type="text" value="" id="txtEmpresa"/><br/>
+        <label for="txtEmailProf" class="description">Seu e-mail profissional: </label><br/>
+		<input name="txtEmailProf" type="text" value="" id="txtEmailProf"/><br/>
+        <label for="cBoxTipoEmp" class="description">Sua situação profissional: </label> <br/>
     	<select name="cBoxTipoEmp">
                 <option value="0" onchange=""> </option>
                 <option value="1">Estou empregado</option>

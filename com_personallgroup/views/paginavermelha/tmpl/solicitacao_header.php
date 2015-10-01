@@ -21,4 +21,4 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
-echo '<h3>Solicitações de novos Personalls</h3>';
+echo '<div class="div_center"><h3>Solicitações de novos Personalls</h3></div>';

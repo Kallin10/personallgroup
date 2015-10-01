@@ -20,7 +20,18 @@
  	border-bottom-right-radius:20px;
   	margin-left:-35px;
   	width:120px;
+	animation: slideMenu 3.0s ease-in 1;
+}
 
+@keyframes slideMenu {
+    0% {
+        transform: translateX(-100px); }
+    40% {
+        transform: translateX(0); }
+    70% {
+        box-shadow: 0px 0px 10px #FFF4E9; }
+    100% {
+        box-shadow: none; }
 }
 
 .KKbotao label:hover{
