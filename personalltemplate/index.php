@@ -86,18 +86,15 @@
     </div>
     <!-- Main -->
     <div class="row">
+      <div class="col-md-12 position-warning"> <!-- mensagens/avisos -->
+          <jdoc:include type="modules" name="position-4" style="none" />
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-12"> <!-- conteúdo principal -->
           <jdoc:include type="modules" name="position-2" style="none" />
           <jdoc:include type="message" />
           <jdoc:include type="component" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 position-saibamais"> <!-- texto/imagem -->
-          <jdoc:include type="modules" name="position-4" style="none" />
-      </div>
-      <div class="col-md-6"> <!-- formulário de cadastro -->
-          <jdoc:include type="modules" name="form" style="none" />
       </div>
     </div>
     <!-- Footer -->
