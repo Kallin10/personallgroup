@@ -471,7 +471,7 @@ input[value="LOGIN"]{
 /*Resize do Banner da primeira página---------------------------------*/
 /*ほんとに！？　だれが下のページを見られない！？めがねを買え!-----------------------*/
 
-img[src="/personallgroup/images/images/commons/Personall_Logo.png"]{
+img[src*="Personall_Logo.png"]{
 	width: 85%;
 	margin: 0px 7.5%;
 }
